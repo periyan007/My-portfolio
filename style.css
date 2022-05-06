@@ -6,7 +6,16 @@
   max-height: 10rem;
   margin: 0;
   padding: 0;
+  animation: fadeIn 5s ;
   
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity :1;
+  }
 }
 
 a {
@@ -167,25 +176,40 @@ h1 {
 #Container{
   position: absolute;
   top:100rem;
-  background:#000000FA;
+  background: url(bg.jpeg)  ;
+ background-size: cover;
   height :230rem;
   display: flex;
   scroll-snap-type-x: x mandatory ;
   overflow:auto;
  width: 100%;
  gap: 5rem;
+ animation : fadein 20s;
+ border-radius: 5rem;
 }
-
+@keyframes fadein{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 .item{
   background:url(pattern.png) no-repeat ;
+  background-radius:15rem;
   background-size: 100%;
   font-size: 4rem;
   position : relative;
   left:5rem;
+  top:3rem;
   min-height:100%;
   opacity: 80%;
   border:.5rem solid ;
-  border-radius:2rem ;
+  border-radius:10rem ;
 }
 
 #Container>.item{
@@ -195,18 +219,11 @@ h1 {
   scroll-snap-align: center;
 }
 h3{
-  color:#D3D6F9;
+  color:#E6E6E6;
   opacity:80%;
 }
 h5{
- color: #939AE8;
-}
-h6{
-  position: absolute;
-  top:332rem;
-  font-size: 2rem;
-color: #62E86F;
-left:24rem;
+ color:#FFDE0C;
 }
 hr{
   position: absolute ;
@@ -214,3 +231,65 @@ hr{
   width:60rem;
   background: #08FF20;
 }
+
+.text-animmation{
+  position : absolute ;
+  top:30rem;
+  left:50rem;
+  background: #1B29C7;
+  
+}
+.line-1{
+  position : absolute ;
+  font-size: 5rem;
+  top:80rem;
+  left:10rem;
+  color :#FDEB6C;
+  
+}
+.line-2{
+  position : absolute ;
+  font-size: 5rem;
+  top:80rem;
+  left:35rem;
+  color :#FDEB6C;
+  opacity:10;
+  background: #FF0C0C;
+}
+.line-3{
+  position : absolute ;
+  font-size: 5rem;
+  top:80rem;
+  left:35rem;
+  color :#FDEB6C;
+  animation: textb 8s infinite;
+  animation-delay: 2s;
+  opacity: 0;
+}
+@keyframes textb{
+  0%{
+    position : absolute ;
+  font-size: 5rem;
+  top:80rem;
+  left:35rem;
+  color :#FDEB6C;
+  opacity: 0;
+  }
+  10%{
+    position : absolute ;
+  font-size: 5rem;
+  top:80rem;
+  left:35rem;
+  color :#FDEB6C;
+  background: #FF0B0B;
+ opacity:100%;
+}
+100%{
+     position : absolute ;
+  font-size: 5rem;
+  top:80rem;
+  left:35rem;
+  color :#FDEB6C;
+  opacity: 0;
+}
+ }
