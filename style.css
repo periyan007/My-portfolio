@@ -64,6 +64,8 @@ a {
   position: absolute;
   left: 26rem;
   top: 50rem;
+  display: flex ;
+  justify-content: center;
   transform: rotate(90deg);
   animation: updown 3s infinite;
   animation-timing-function: linear;
@@ -110,7 +112,7 @@ a {
   width: 8rem;
   height: 1.5rem;
   position: absolute;
- background:#A51BEDE3;
+ background:#E100FF;
   top:10rem;
   right: 1rem;
   border-radius: 1rem;
@@ -139,7 +141,7 @@ a {
     width: 8rem;
   height: 1.5rem;
   position: absolute;
- background:#A51BEDE3;
+ background:#E100FF;
   top:10rem;
   right:5rem;
   border-radius: 1rem;
@@ -156,10 +158,15 @@ p {
   color: #DFDFDFC7;
   font-family: 'Heebo', sans-serif;
 }
-
+#Founder{
+        position: absolute;
+        top: 39rem;
+        left: 15.1rem;
+        color: #9C8F9F;
+}
 h1 {
   position: absolute;
-  top: 39rem;
+  top: 42rem;
   left: 15.1rem;
   color: #9C8F9F;
 }
@@ -175,7 +182,7 @@ h1 {
   overflow:auto;
  width: 100%;
  gap:6rem;
- animation : fadein 10s;
+ animation : fadein 2s;
  border-radius: 1rem;
 }
 @keyframes fadein{
@@ -183,7 +190,7 @@ h1 {
     opacity: 0;
   }
   50%{
-    opacity: 1;
+    opacity: 11;
   }
   100%{
     opacity: 0;
@@ -191,7 +198,7 @@ h1 {
 }
 .item{
   background:url(pattern.png) no-repeat ;
-  background-radius:15rem;
+border-radius:15rem;
   background-size: 100%;
   font-size: 4rem;
   position : relative;
@@ -215,6 +222,11 @@ h3{
 }
 h5{
  color:#FFDE0C;
+ 
+ border-radius: 3rem;
+ 
+ 
+ filter: alp
 }
 hr{
   position: absolute ;
@@ -246,6 +258,7 @@ hr{
   color :#FDEB6C;
   opacity:10;
   background: #FF0C0C;
+  border-radius:2rem;
 }
 .line-3{
   position : absolute ;
@@ -256,6 +269,7 @@ hr{
   animation: textb 8s infinite;
   animation-delay: 2s;
   opacity: 0;
+  border-radius:2rem;
 }
 @keyframes textb{
   0%{
@@ -288,8 +302,8 @@ hr{
  h6{
    position : absolute ;
    top:330rem;
-   left:10rem;
+   left:15rem;
    color: #5FDCDA;
    font-size: 2rem;
-   
  }
+
