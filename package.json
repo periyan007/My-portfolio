@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint:html && npm run lint:css",
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "html-validate index.html",
+    "lint:css": "stylelint style.css",
+    "lint:fix": "stylelint style.css --fix",
+    "serve": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
   },
   "keywords": [],
   "author": "",
