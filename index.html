@@ -14,8 +14,7 @@
 </head>
 <script>
   console.log('page is loading');
-  console.log(alert);
-alert('Best View In Desktop Mode');
+  console.log('Best View In Desktop Mode');
 </script>
 <body>
  
@@ -95,5 +94,26 @@ alert('Best View In Desktop Mode');
    </div>
       <h6>Ajith was designed for his angel. </h6>
  <hr>
+
+ <!-- AI Chatbot Agent -->
+ <div id="ai-chatbot">
+   <div id="chatbot-header">
+     <span id="chatbot-title">🤖 AI Assistant</span>
+     <button id="chatbot-toggle">💬</button>
+   </div>
+   <div id="chatbot-container" class="chatbot-hidden">
+     <div id="chatbot-messages">
+       <div class="message bot-message">
+         <span>Hi! I'm Ajith's AI assistant. Ask me anything about his background, skills, or goals!</span>
+       </div>
+     </div>
+     <div id="chatbot-input-container">
+       <input type="text" id="chatbot-input" placeholder="Ask me about Ajith..." maxlength="200">
+       <button id="chatbot-send">Send</button>
+     </div>
+   </div>
+ </div>
+
+ <script src="chatbot.js"></script>
 </body>
 </html>
