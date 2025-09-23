@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio Form - Editable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form-styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <header class="form-header">
+            <h1>Professional Portfolio Information Form</h1>
+            <p>Please fill out the following information to update your portfolio details</p>
+        </header>
+
+        <form id="portfolioForm" class="portfolio-form">
+            <!-- Personal Information Section -->
+            <section class="form-section">
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Street, City, State, ZIP Code"></textarea>
+                </div>
+            </section>
+
+            <!-- Professional Information Section -->
+            <section class="form-section">
+                <h2>Professional Information</h2>
+                <div class="form-group">
+                    <label for="currentPosition">Current Position</label>
+                    <input type="text" id="currentPosition" name="currentPosition" placeholder="e.g., Frontend Developer, Maintenance Technician">
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Current Company/Organization</label>
+                    <input type="text" id="company" name="company" placeholder="e.g., Brakes India Pvt Ltd">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="experienceYears">Years of Experience</label>
+                        <select id="experienceYears" name="experienceYears">
+                            <option value="">Select...</option>
+                            <option value="0-1">0-1 years</option>
+                            <option value="2-3">2-3 years</option>
+                            <option value="4-5">4-5 years</option>
+                            <option value="6-10">6-10 years</option>
+                            <option value="10+">10+ years</option>
+                        </select>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="salary">Expected/Current Salary</label>
+                        <input type="text" id="salary" name="salary" placeholder="Optional">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills">Technical Skills</label>
+                    <textarea id="skills" name="skills" rows="3" placeholder="List your technical skills, programming languages, tools, etc."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Professional Summary/Bio</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Brief description of your professional background and goals"></textarea>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="form-section">
+                <h2>Education</h2>
+                <div class="education-entries">
+                    <div class="education-entry">
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="degree1">Degree/Certification</label>
+                                <input type="text" id="degree1" name="degree1" placeholder="e.g., Bachelor's in Engineering">
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="institution1">Institution</label>
+                                <input type="text" id="institution1" name="institution1" placeholder="University/College name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="graduationYear1">Year of Graduation</label>
+                                <input type="number" id="graduationYear1" name="graduationYear1" min="1980" max="2030">
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="gpa1">GPA (Optional)</label>
+                                <input type="text" id="gpa1" name="gpa1" placeholder="e.g., 3.8/4.0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="addEducation" class="add-btn">+ Add Another Education</button>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="form-section">
+                <h2>Projects</h2>
+                <div class="project-entries">
+                    <div class="project-entry">
+                        <div class="form-group">
+                            <label for="projectName1">Project Name</label>
+                            <input type="text" id="projectName1" name="projectName1" placeholder="e.g., Dream It Code It">
+                        </div>
+                        <div class="form-group">
+                            <label for="projectDescription1">Project Description</label>
+                            <textarea id="projectDescription1" name="projectDescription1" rows="3" placeholder="Describe your project, technologies used, and outcomes"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="projectUrl1">Project URL (Optional)</label>
+                                <input type="url" id="projectUrl1" name="projectUrl1" placeholder="https://example.com">
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="projectDate1">Completion Date</label>
+                                <input type="date" id="projectDate1" name="projectDate1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="addProject" class="add-btn">+ Add Another Project</button>
+            </section>
+
+            <!-- Social Media & Contact Section -->
+            <section class="form-section">
+                <h2>Social Media & Contact Links</h2>
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="linkedin">LinkedIn Profile</label>
+                        <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="github">GitHub Profile</label>
+                        <input type="url" id="github" name="github" placeholder="https://github.com/yourusername">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="twitter">Twitter Profile</label>
+                        <input type="url" id="twitter" name="twitter" placeholder="https://twitter.com/yourusername">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="instagram">Instagram Profile</label>
+                        <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/yourusername">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="portfolio">Portfolio Website</label>
+                    <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com">
+                </div>
+            </section>
+
+            <!-- Career Goals Section -->
+            <section class="form-section">
+                <h2>Career Goals & Aspirations</h2>
+                <div class="form-group">
+                    <label for="currentGoals">Current Professional Focus</label>
+                    <textarea id="currentGoals" name="currentGoals" rows="3" placeholder="What are you currently working on or focusing on professionally?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fiveYearGoals">5-Year Career Goals</label>
+                    <textarea id="fiveYearGoals" name="fiveYearGoals" rows="3" placeholder="Where do you see yourself in 5 years?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Personal Interests & Hobbies</label>
+                    <textarea id="interests" name="interests" rows="2" placeholder="What do you enjoy doing outside of work?"></textarea>
+                </div>
+            </section>
+
+            <!-- Form Actions -->
+            <section class="form-actions">
+                <button type="button" id="previewBtn" class="btn-secondary">Preview Data</button>
+                <button type="button" id="saveBtn" class="btn-secondary">Save as Draft</button>
+                <button type="button" id="exportBtn" class="btn-secondary">Export as JSON</button>
+                <button type="button" id="clearBtn" class="btn-danger">Clear Form</button>
+                <button type="submit" class="btn-primary">Submit Form</button>
+            </section>
+        </form>
+
+        <!-- Preview Modal -->
+        <div id="previewModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Form Data Preview</h2>
+                <div id="previewContent"></div>
+                <div class="modal-actions">
+                    <button type="button" id="editBtn" class="btn-secondary">Continue Editing</button>
+                    <button type="button" id="finalSubmitBtn" class="btn-primary">Confirm & Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="form-script.js"></script>
+</body>
+</html>
