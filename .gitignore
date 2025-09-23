@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Temporary files
+test-chatbot.html
+/tmp/*
